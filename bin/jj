@@ -1,0 +1,17 @@
+#!/bin/sh
+exec ruby -x "$0" "$@"
+#!ruby
+
+proc {
+  root = __FILE__
+  root = File.readlink(root) while File.lstat(root).symlink?
+  $JJ_INSTDIR = File.absolute_path(File.join(File.dirname(root), ".."))
+  $LOAD_PATH.unshift(File.join($JJ_INSTDIR, "lib"))
+}.call()
+
+require 'jj'
+
+go()
+
+
+

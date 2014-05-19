@@ -1,0 +1,122 @@
+
+/*
+	My default style-sheet. 
+*/	
+
+body { 
+  color: black; 
+  background: white;
+  font-size: 10pt;
+  background-image:url(leftfade.png);
+  background-repeat:repeat-y;
+}
+
+h1 { 
+  font-size: 140%;
+}
+
+/*dl, p, ul, ol {
+	font-size: 14;
+}*/
+
+pre {
+	margin-left: 5%;
+	font-family: "Courier";
+	font-size: 90%;
+}
+
+
+/* Content pane: */
+
+#content { 
+  margin-left: 138px; /* To match the width of leftfade.jpg. */
+  margin-right: 15em;
+}
+
+
+/* Sidebar */
+#sidebar {
+  margin-right: 2.5mm;
+  width: 12em;
+  float: right;
+  clear: right;
+}
+
+#sidebar h1 { 
+  font-size: 80%; 
+}
+
+#sidebar .contents { 
+  border: solid 1px #0000FF;
+  background: #EEEEFF;
+  padding: 1em;
+}
+
+/* Header stuff */
+
+#header { 
+  border: solid 1px black;
+  font-size: 14pt;
+  background: white;
+  margin-left: 64px;
+  margin-right: 7em;
+  height: 20ex;
+}
+
+#header h1 { 
+  text-align: center;
+  /*font-size: 150%;*/
+  /*line-height: 200%;*/
+}
+
+#header ul { 
+  list-style-image: none;
+}
+
+#header li {
+  margin:0;
+  padding:0;
+  list-style:none;
+  float:left;
+}
+
+#header li a {
+  display:block;
+  padding:7px;
+  margin:0 10px 0 0;
+  font-size:70%;
+}
+
+/*	too clever
+a:hover {
+  text-decoration:underline;
+}
+*/
+
+#header li a em {
+  font-style:normal;
+  text-decoration:underline;
+}
+
+#header #links { 
+  margin-left: 10%;
+}
+
+
+/* Article stuff */
+.article { 
+  padding-bottom: 1.5em;
+}
+
+.article #footer { 
+  padding-bottom: 0.3em;
+  border-bottom: thin dotted #0000FF;
+}
+
+
+/* Page footer stuff */
+
+#mainfooter { 
+  margin-left: 138px;
+  margin-right: 15em;
+}
