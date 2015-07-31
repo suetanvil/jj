@@ -1,10 +1,5 @@
 #!/usr/bin/env ruby
 
-# temporary!
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-
-# Command-line arg parser.  For now, a mainline routine.
-
 require 'optparse'
 require 'subcommand'
 

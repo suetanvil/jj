@@ -31,7 +31,7 @@ end
 def slurp(filename, allowMissing = false)
   return '' if allowMissing && !File.exist?(filename)
   return iowrap do 
-    File.open(filename, "r") { |fh| fh.lines.to_a.join("") }
+    File.open(filename, "r") { |fh| fh.each_line.to_a.join("") }
   end
 end
 

@@ -234,7 +234,7 @@ class BlogAction
       puts "Error running '#{@globalCfg[:editor]}'"
     
     tmpfile.open
-    article = Article.new(tmpfile.lines.to_a.join(""))
+    article = Article.new(tmpfile.each_line.to_a.join(""))
     tmpfile.close
     tmpfile.unlink
 

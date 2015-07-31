@@ -149,7 +149,7 @@ class Article
     headers = parseHeaders(input)
     parseHeaderFields(headers)
     
-    body = input.lines.to_a.join("")
+    body = input.each_line.to_a.join("")
 
     return [headers, body]
   end
