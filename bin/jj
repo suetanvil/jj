@@ -2,6 +2,10 @@
 exec ruby -x "$0" "$@"
 #!ruby
 
+# Suppress warnings during day-to-day use.  Comment this out for
+# development.
+$VERBOSE = nil
+
 proc {
   root = __FILE__
   root = File.readlink(root) while File.lstat(root).symlink?
